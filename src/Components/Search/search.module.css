@@ -12,23 +12,23 @@
 }
 
 .container div{
+    color: var(--primary-color);
     margin-bottom: 25px;
     text-align: center;
-    font-size: 1.5rem;
-    color: #fe1a5c;
+    font-size: 1.5rem; 
 }
 
 .container input{
+    border: 1px solid var(--primary-color);
     background-color: transparent;
-    border: 1px solid #fe1a5c;
     border-radius: 10px;
     outline: none;
     padding: 10px;
-    color: #f5f5f5
+    color: var(--text-color);
 }
 
 .container input::placeholder{
-    color: #fe1a5c;
+    color: var(--primary-color);
 }
 
 @media only screen and (min-width:719px) {

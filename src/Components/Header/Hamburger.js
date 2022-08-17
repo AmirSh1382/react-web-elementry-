@@ -16,7 +16,7 @@ const Burger = styled.div`
   transition: 0.2s;
 
   div {
-    background-color: ${props => props.open ? "#fe1a5c" : "#fff"};
+    background-color: ${props => props.open ? "var(--primary-color)" : "var(--text-color)"};
     transform-origin: 1px;
     border-radius: 10px;
     margin-top: auto;

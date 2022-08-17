@@ -4,3 +4,8 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+:root{
+    --primary-color: #fe1a5c;
+    --text-color: #f5f5f5;
+}

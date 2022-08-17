@@ -9,18 +9,18 @@ const Ul = styled.ul`
   transition: transform 0.3s;
 
   a {
+    color: ${props => props.open ? "#000" : "var(--text-color)"};
     text-decoration: none;
-    color: #fff;
     transition: 0.2s;
 
     &:hover {
-      color: #fe1a5c;
+      color: var(--primary-color);
     }
   }
 
   @media (max-width: 768px) {
     transform: ${props => props.open ? "translateX(0)" : "translateX(100%)"};
-    background-color: #fff;
+    background-color: var(--text-color);
     padding: 70px 0px;
     display: block;
     height: 100vh;
@@ -31,10 +31,6 @@ const Ul = styled.ul`
 
     li {
       padding: 10px 25px;
-    }
-
-    a {
-      color: #000;
     }
   }
 `;

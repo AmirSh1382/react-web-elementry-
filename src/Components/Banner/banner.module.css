@@ -9,10 +9,10 @@
 
 .textInfo{
     position: absolute;
+    left: 40px;
     top: 50%;
     transform: translateY(-50%);
-    color: #fff;
-    left: 40px;
+    color: var(--text-color);
 }
 
 .textInfo h3{
@@ -20,7 +20,7 @@
 }
 
 .textInfo span{
-    color: #fe1a5c;
+    color: var(--primary-color);
 }
 
 @media only screen and (min-width:640px){
