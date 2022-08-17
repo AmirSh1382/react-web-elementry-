@@ -1,0 +1,33 @@
+.header{
+    box-shadow: 2px 0px 20px rgba(255, 255, 255, 0.412);
+    background-color: #000;
+    position: fixed;
+    padding: 20px;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img{
+    width: 45px;
+}
+
+@media only screen and (min-width: 640px){
+    .header{
+        padding: 20px 50px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .header{
+        padding: 20px 100px;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .header{
+        padding: 20px 150px;
+    }
+}
