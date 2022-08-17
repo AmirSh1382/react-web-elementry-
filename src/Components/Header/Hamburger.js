@@ -54,14 +54,15 @@ class Hamburger extends Component {
   };
 
   render() {
+    const { open } = this.state
     return (
       <div className="d-flex align-items-center">
-        <Navbar open={this.state.open} />
+        <Navbar open={ open } />
         
-        <Burger open={this.state.open} onClick={this.clickHandler}>
+        <Burger open={ open } onClick={this.clickHandler}>
           <div></div>
-          <div className=""></div>
-          <div className=""></div>
+          <div></div>
+          <div></div>
         </Burger>
       </div>
     );
