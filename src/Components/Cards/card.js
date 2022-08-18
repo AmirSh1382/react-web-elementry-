@@ -33,10 +33,10 @@ class card extends Component {
           <img src={src} alt="card" />
           <div>
             <h4 className="m-3">{name}</h4>
-            <span className="m-3 mb-0 p-2">{price}$</span>
+            <span className="m-3 mb-0 p-2">{price} {counter ? `* ${counter} = ${counter * price}$` : null} </span>
             <hr className="text-white m-0 mt-3" />
             <div className={styles.counter}>
-              <i onClick={this.down1} className={this.state.counter ? "bi bi-arrow-down" : `${styles.deactive} bi bi-arrow-down`}></i>
+              <i onClick={this.down1} className={`bi bi-arrow-down ${!counter && styles.deactive}`}></i>
               <div>{counter}</div>
               <i onClick={this.up1} className="bi bi-arrow-up"></i>
             </div>
