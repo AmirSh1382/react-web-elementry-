@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 
+import styles from "./Footer.module.css";
+
 class footer extends Component {
   render() {
     return (
-      <footer className="bg-black pb-4">
+      <footer className={styles.container}>
         <div className="text-center text-white">
           AmirSh &copy; All rights reserved
         </div>

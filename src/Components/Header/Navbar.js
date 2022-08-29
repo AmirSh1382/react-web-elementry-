@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Ul = styled.ul`
@@ -40,10 +41,10 @@ class Navbar extends Component {
     const { open } = this.props;
     return (
       <Ul open={open}>
-        <li className="pe-3"><a href="/">About US</a></li>
-        <li className="pe-3"><a href="/">Contact</a></li>
-        <li className="pe-3"><a href="/">Products</a></li>
-        <li className="pe-3"><a href="/">Home</a></li>
+        <li className="pe-3"><Link to="/about">About US</Link></li>
+        <li className="pe-3"><Link to="/contact">Contact</Link></li>
+        <li className="pe-3"><Link to="/products">Products</Link></li>
+        <li className="pe-3"><Link to="/">Home</Link></li>
       </Ul>
     );
   }
